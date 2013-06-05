@@ -1,0 +1,98 @@
+# Form Module Specification
+
+Fields:
+
+- Form Title
+- Form Submission E-Mail Address
+- Field One
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Two
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Three
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Four
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Five
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Six
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Seven
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Eight
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Nine
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Ten
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Eleven
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Twelve
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Thirteen
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Fourteen
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Fifteen
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Sixteen
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Seventeen
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+- Field Eighteen
+	- Display Yes / No - Default No
+	- Label
+	- Type
+	- Size
+
+- Module Class Suffix

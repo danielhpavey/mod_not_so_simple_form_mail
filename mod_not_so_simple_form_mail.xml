@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site">
+	<name>Not So Simple Form Mailer</name>
+	<author>Daniel H Pavey</author>
+	<creationDate>May 2013</creationDate>
+	<copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>danielhpavey@gmail.com</authorEmail>
+	<authorUrl>www.spacaecadet9.com</authorUrl>
+	<version>0.0.1</version>
+	<description>Straight forward form module that simply e-mails submitted info</description>
+	<files>
+		<filename module="mod_not_so_simple_form_mail">mod_not_so_simple_form_mail.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label = "Basic Settings">
+				<field
+					name="form_title"
+					type="text"
+					label="Form Title"
+					description="Title of the Form!"
+					default="Form">
+				</field>
+				<field
+					name="email"
+					type="text"
+					label="E-Mail Address"
+					description="The e-mail address that the submitted form data will be sent to."
+					default="">
+				</field>
+				<field
+					name="message"
+					type="textarea"
+					rows="10"
+					cols="30"
+					label="E-mail Sent Message"
+					description="The message that will appear when the e-mail has been sent"
+					default="Thank you, your message has been sent and someone will be in contact very soon">
+				</field>
+				<field
+					name="sender"
+					type="text"
+					size="40"
+					label="Sender"
+					description="If you would like the e-mail to appear to have been sent by whoever completes the form, insert the field label of the field that will contain the e-mail address here.  If nothing is entered here the e-mail will come from the default Joomla admin address"
+					default="">
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldone" label = "Form Field One">
+				<field
+					name="display1"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="1">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label1"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type1"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required1"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldtwo" label = "Form Field Two">
+				<field
+					name="display2"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label2"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type2"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required2"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldthree" label = "Form Field Three">
+				<field
+					name="display3"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label3"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type3"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required3"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldfour" label = "Form Field Four">
+				<field
+					name="display4"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label4"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type4"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required4"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldfive" label = "Form Field Five">
+				<field
+					name="display5"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label5"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type5"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required5"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+
+			<fieldset
+				name="fieldsix" label = "Form Field Five">
+				<field
+					name="display6"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label6"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type6"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required6"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldseven" label = "Form Field Seven">
+				<field
+					name="display7"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label7"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type7"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required7"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldeight" label = "Form Field Eight">
+				<field
+					name="display8"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label8"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type8"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">					
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+					</field>
+					<field
+					name="required8"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldnine" label = "Form Field Nine">
+				<field
+					name="display9"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label9"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type9"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required9"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldten" label = "Form Field Ten">
+				<field
+					name="display10"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label10"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type10"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required10"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldeleven" label = "Form Field Eleven">
+				<field
+					name="display11"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label11"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type11"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required11"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldtwelve" label = "Form Field Twelve">
+				<field
+					name="display12"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label12"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type12"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required12"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldthirteen" label = "Form Field Thirteen">
+				<field
+					name="display13"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label13"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type13"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required13"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldfourteen" label = "Form Field Fourteen">
+				<field
+					name="display14"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label14"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type14"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required14"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldfifteen" label = "Form Field Fifteen">
+				<field
+					name="display15"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label15"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type15"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required15"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldsixteen" label = "Form Field Sixteen">
+				<field
+					name="display16"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label16"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type16"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required16"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+			<fieldset
+				name="fieldseventeen" label = "Form Field Seventeen">
+				<field
+					name="display17"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label17"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type17"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="text">
+					<option
+						value="text">Text</option>
+					<option
+						value="textarea">Textarea</option>
+				</field>
+				<field
+					name="required7"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+			</fieldset>
+
+
+		</fields>
+	</config>
+</extension>
