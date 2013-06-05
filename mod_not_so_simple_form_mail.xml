@@ -284,7 +284,7 @@
 
 
 			<fieldset
-				name="fieldsix" label = "Form Field Five">
+				name="fieldsix" label = "Form Field Six">
 				<field
 					name="display6"
 					type="radio"
