@@ -1,8 +1,8 @@
+<div class="join-us-form">
 <?php
 JHTML::_('behavior.mootools');
 JHTML::_('behavior.formvalidation');
 include ('helper.php');
-
 
 if(isset($_POST["action"]))
 	{
@@ -12,15 +12,18 @@ if(isset($_POST["action"]))
 		$send ->sender = $params->get('sender', '');
 	}
 	$send -> send();
+	
+	if ( strlen ( $params->get( 'redirect', '')) > 2){
+		$header = JURI::base() . $params->get( 'redirect', '');
+		header ( "Location:$header");
 
+	} else {
 	require JModuleHelper::getLayoutPath('mod_not_so_simple_form_mail', $params->get('layout', 'response'));
+	}
 	}
 	
 	else
-	
-	
 	{
-
 	$currenturl = JURI::current();
 	$fields = array();
 	$fieldnumber = 17;
@@ -35,3 +38,5 @@ if(isset($_POST["action"]))
 
 }
 
+?>
+</div>

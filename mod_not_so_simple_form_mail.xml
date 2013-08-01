@@ -55,6 +55,14 @@
 					description="If you would like the e-mail to appear to have been sent by whoever completes the form, insert the field label of the field that will contain the e-mail address here.  If nothing is entered here the e-mail will come from the default Joomla admin address"
 					default="">
 				</field>
+				<field
+					name="redirect"
+					type="text"
+					size="40"
+					label="Redirect"
+					description="Put in here a url that you would like to be redirected to after the form has been submitted"
+					default="">
+				</field>
 			</fieldset>
 
 			<fieldset
