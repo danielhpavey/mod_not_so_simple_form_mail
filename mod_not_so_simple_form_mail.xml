@@ -819,6 +819,17 @@
 						value="textarea">Textarea</option>
 				</field>
 				<field
+					name="required17"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
 					name="required7"
 					type="radio"
 					label="Required"
@@ -829,6 +840,49 @@
 					<option
 						value="1">JYes</option>
 				</field>
+			</fieldset>
+			<fieldset
+				name="fieldeighteen" label = "Confirmtion Tick Box">
+				<field
+					name="display18"
+					type="radio"
+					label="Display"
+					description="Display this field?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
+					name="label18"
+					type="text"
+					size="40"
+					label="Label"
+					description="Label"
+					default="Label">
+				</field>
+				<field
+					name="type18"
+					type="list"
+					label="Type"
+					description="Field Input Type"
+					default="checkbox">
+					<option
+						value="checkbox">Checkbox</option>
+				</field>
+				<field
+					name="required18"
+					type="radio"
+					label="Required"
+					description="Use Joomla Form Vaidation on this input?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+
 			</fieldset>
 
 
