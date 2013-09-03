@@ -884,6 +884,14 @@
 				</field>
 
 			</fieldset>
+			<fieldset
+				name="Display" label = "Display">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
 
 
 		</fields>
