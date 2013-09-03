@@ -28,7 +28,6 @@ if(isset($_POST["action"]))
 	$fields = array();
 	$fieldnumber = 19;
 	$fieldcounter = 1;
-	echo '<h1>boo ' . $params->get('type18', '') . '</h1>';
 	while ( $fieldcounter != $fieldnumber ){
 	$params->get('display' . $fieldcounter, '') == 1 ? $fields[] = createInput::createInputDisplay($params->get('label' . $fieldcounter, ''), $params->get('type' . $fieldcounter, ''), $params->get('label' . $fieldcounter, ''), $params->get('required' . $fieldcounter, '')) : false;
 	$fieldcounter ++;
