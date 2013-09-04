@@ -1,9 +1,7 @@
 <div class="form">
 <?php
-JHTML::_('behavior.mootools');
-JHTML::_('behavior.formvalidation');
-include ('helper.php');
 $moduleclass_sfx = $params->get('moduleclass_sfx', '');
+include('helper.php');
 if(isset($_POST["action"]))
 	{
 	//echo 'send mail';

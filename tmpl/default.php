@@ -2,7 +2,7 @@
 defined( '_JEXEC' ) or die;
 
 echo '<div class="moduletable' .  $moduleclass_sfx . '">';
-echo '<form action="' . $currenturl . '" method = "post" class="form-validate" onSubmit="return myValidate(this);">';
+echo '<form action="' . $currenturl . '" method = "post" id="simpleform"">';
 echo '<Legend>' . $params->get('form_title', '') . '</legend>';
 echo '<fieldset>';
 echo '<fieldset>';
@@ -18,4 +18,7 @@ echo '</fieldset>';
 echo '</fieldset>';
 
 echo '</form>';
+echo '<script>
+	$("#simpleform").validate();
+	</script>';
 echo '</div>';
