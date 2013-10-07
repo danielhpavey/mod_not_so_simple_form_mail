@@ -96,6 +96,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required1"
@@ -141,6 +149,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required2"
@@ -186,6 +202,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required3"
@@ -231,6 +255,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required4"
@@ -276,6 +308,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required5"
@@ -322,6 +362,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required6"
@@ -367,6 +415,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required7"
@@ -412,6 +468,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 					</field>
 					<field
 					name="required8"
@@ -457,6 +521,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required9"
@@ -502,6 +574,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required10"
@@ -547,6 +627,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required11"
@@ -592,6 +680,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required12"
@@ -637,6 +733,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required13"
@@ -682,6 +786,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required14"
@@ -727,6 +839,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required15"
@@ -772,6 +892,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required16"
@@ -817,6 +945,14 @@
 						value="text">Text</option>
 					<option
 						value="textarea">Textarea</option>
+					<option
+						value="number">Number</option>
+					<option
+						value="tel">Telephone</option>
+					<option
+						value="url">URL</option>
+					<option
+						value="email">E-mail</option>
 				</field>
 				<field
 					name="required17"
