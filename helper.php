@@ -12,7 +12,7 @@ class createInput{
 		if($type == "textarea")
 			{
 			$input .= '<textarea name = "' . str_replace(' ', '_', strtolower($name));
-			$input .= $required == 1 ? ' class="required" ' : '';
+			$input .= $required == 1 ? ' required ' : '';
 			$input .= '">';
 			$input .= '</textarea>';
 			
@@ -25,7 +25,7 @@ class createInput{
 
 			$input .= ' name = "' . str_replace(' ', '_', strtolower($name)) . '"';
 			$input .= ' value=""';
-			$input .= $required == 1 ? ' class="required" ' : '';
+			$input .= $required == 1 ? ' required ' : '';
 			$input .=  '/>';
 			}
 			
