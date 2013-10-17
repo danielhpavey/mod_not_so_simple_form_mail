@@ -90,9 +90,61 @@ class form_submit{
 
 	}
 
+}
 
 
+class FormValidation{
 
+	
+	function __construct( $valfields, $postdata){
+		$this -> valfields = $valfields;
+		$this -> post = $postdata;
+	}
+
+	function validate(){
+
+		$err = '0';
+
+		foreach ( $this -> post as $key => $data ){
+
+			if ( $this -> valfields -> $key ){
+
+				if ( $this -> valfields -> $key == "text" ){
+					// Data must be word characters only
+					// if(preg_match('/^\pL+$/u', $data) === 0){
+					if(preg_match("/^[0-9a-zA-Z_]{1,}$/", $data) === 0){
+					// $err .= 'Data: ' . $data . '<br />';
+					// $err .= '<p class="errText">Name must be from letters, dashes, spaces and must not start with dash</p>';
+						$err = 1;
+					}
+				}
+				
+				}
+
+		}
+
+		return $err;
+
+			
+
+	}
+
+}
+
+class FormValFields{
+
+	function __set($property, $value){
+
+	$this->$property = $value;
+
+	}
+
+	function __get($property){
+
+	if (isset($this->$property))
+	return $this->$property;
+
+	}
 }
 
 ?>
