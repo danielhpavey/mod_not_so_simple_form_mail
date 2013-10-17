@@ -24,17 +24,17 @@ if(isset($_POST["action"]))
 	if (strlen($params->get('sender', '')) > 1){
 		$send ->sender = $params->get('sender', '');
 	}
-	//$send -> send();
+	$send -> send();
 	
 	if ( strlen ( $params->get( 'redirect', '')) > 2){
 		$header = JURI::base() . $params->get( 'redirect', '');
-	//	header ( "Location:$header");
+		header ( "Location:$header");
 
 	} else {
-	//require JModuleHelper::getLayoutPath('mod_not_so_simple_form_mail', $params->get('layout', 'response'));
+	require JModuleHelper::getLayoutPath('mod_not_so_simple_form_mail', $params->get('layout', 'response'));
 	}
 	}
-	else { echo "Error";}
+	else { echo "There was an error with the information you submitted.  Please try again.";}
 	}
 	else
 	{
