@@ -28,7 +28,7 @@ if(isset($_POST["action"]))
 	
 	if ( strlen ( $params->get( 'redirect', '')) > 2){
 		$header = JURI::base() . $params->get( 'redirect', '');
-//		header ( "Location:$header");
+		header ( "Location:$header");
 
 	} else {
 	require JModuleHelper::getLayoutPath('mod_not_so_simple_form_mail', $params->get('layout', 'response'));
