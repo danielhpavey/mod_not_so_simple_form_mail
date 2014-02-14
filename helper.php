@@ -11,7 +11,7 @@ class createInput{
 		
 		if($type == "textarea")
 			{
-			$input .= '<textarea name = "' . str_replace(' ', '_', strtolower($name));
+			$input .= '<textarea name = "' . str_replace(' ', '_', strtolower($name)) . '"';
 			$input .= $required == 1 ? ' required ' : '';
 			$input .= '">';
 			$input .= '</textarea>';
@@ -99,8 +99,8 @@ class FormValidation{
 	function __construct( $valfields, $postdata){
 		$this -> valfields = $valfields;
 		$this -> post = $postdata;
-//		var_dump($this -> valfields);
-//		var_dump($this -> post);
+		//var_dump($this -> valfields);
+		//var_dump($this -> post);
 	}
 
 	function validate(){
