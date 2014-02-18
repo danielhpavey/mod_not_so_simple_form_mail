@@ -11,7 +11,7 @@ class createInput{
 		
 		if($type == "textarea")
 			{
-			$input .= '<textarea name = "' . str_replace(' ', '_', strtolower($name));
+			$input .= '<textarea name = "' . str_replace(' ', '_', strtolower($name)) . '"';
 			$input .= $required == 1 ? ' required ' : '';
 			$input .= '">';
 			$input .= '</textarea>';
@@ -99,6 +99,8 @@ class FormValidation{
 	function __construct( $valfields, $postdata){
 		$this -> valfields = $valfields;
 		$this -> post = $postdata;
+		//var_dump($this -> valfields);
+		//var_dump($this -> post);
 	}
 
 	function validate(){
@@ -107,20 +109,14 @@ class FormValidation{
 
 		foreach ( $this -> post as $key => $data ){
 
-			if ( $this -> valfields -> $key ){
+		if ( $this -> valfields -> $key ){
 
-				if ( $this -> valfields -> $key == "text" && strlen($data) > 1 ){
-					// Data must be word characters only
-					// if(preg_match('/^\pL+$/u', $data) === 0){
-					// if(preg_match("/^[0-9a-zA-Z_]{1,}$/", $data) === 0){
-					if(preg_match('/^[a-z0-9 .\-]+$/i', $data) === 0){
-					// $err .= 'Data: ' . $data . '<br />';
-					// $err .= '<p class="errText">Name must be from letters, dashes, spaces and must not start with dash</p>';
-						$err = 1;
-					}
-				}
-				
-				}
+		if ( $this -> valfields -> $key == "text" || $this -> valfields -> $key == "textarea"  && strlen($data) > 1 ){
+		if(preg_match('/^[a-z0-9 .\-]+$/i', $data) === 0){
+		$err = 1;
+		}
+		}
+		}
 
 		}
 
