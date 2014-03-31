@@ -4,7 +4,6 @@ $moduleclass_sfx = $params->get('moduleclass_sfx', '');
 include('helper.php');
 if(isset($_POST["action"]))
 	{
-	// print_r($_POST);
 	$valfields = new FormValFields();
 	$fieldnumber = 19;
 	$fieldcounter = 1;
@@ -43,7 +42,7 @@ if(isset($_POST["action"]))
 	$fieldnumber = 19;
 	$fieldcounter = 1;
 	while ( $fieldcounter != $fieldnumber ){
-	$params->get('display' . $fieldcounter, '') == 1 ? $fields[] = createInput::createInputDisplay($params->get('label' . $fieldcounter, ''), $params->get('type' . $fieldcounter, ''), $params->get('label' . $fieldcounter, ''), $params->get('required' . $fieldcounter, '')) : false;
+	$params->get('display' . $fieldcounter, '') == 1 ? $fields[] = createInput::createInputDisplay($params->get('label' . $fieldcounter, ''), $params->get('type' . $fieldcounter, ''), $params->get('label' . $fieldcounter, ''), $params->get('required' . $fieldcounter, ''), $params->get('placeholders')) : false;
 	$fieldcounter ++;
 	}
 
