@@ -121,7 +121,7 @@ class FormValidation{
 		if ( $this -> valfields -> $key ){
 
 		if ( $this -> valfields -> $key == "text" || $this -> valfields -> $key == "textarea"  && strlen($data) > 1 ){
-		if(preg_match('/^[a-z0-9 .\-]+$/i', $data) === 0){
+		if ( $data != strip_tags( $data )){	
 		$err = 1;
 		}
 		}
