@@ -13,7 +13,7 @@ foreach ( $fields as $f )
 echo '<input type = "hidden" name = "action" value = "submit">';
 echo '</fieldset>';
 echo '<fieldset>';
-echo '<label>&nbsp;</label><input type = "submit" class = "button" value = "Submit">';
+echo '<label>&nbsp;</label><input type = "submit" class = "button" value = "' . $params->get('submitbuttontext', '') . '">';
 echo '</fieldset>';
 echo '</fieldset>';
 

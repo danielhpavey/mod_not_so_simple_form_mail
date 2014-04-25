@@ -74,6 +74,14 @@
 						value="0">JNo</option>
 					<option
 						value="1">JYes</option>
+				<field
+					name="submitbuttontext"
+					type="text"
+					size="40"
+					label="Submit Button Text"
+					description="Customise the submit buttong text"
+					default="Submit">
+				</field>
 				</field>
 			</fieldset>
 
