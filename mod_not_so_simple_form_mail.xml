@@ -64,6 +64,17 @@
 					description="Put in here a url that you would like to be redirected to after the form has been submitted"
 					default="">
 				</field>
+				<field
+					name="placeholders"
+					type="radio"
+					label="Placeholders"
+					description="Use labels as placeholders (If selected labels will not be displayed)"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
 			</fieldset>
 
 			<fieldset

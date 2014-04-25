@@ -1,18 +1,22 @@
 <?php
 
-
 class createInput{
 			
-	public static function createInputDisplay($label, $type, $name, $required)
+	public static function createInputDisplay($label, $type, $name, $required, $placeholders)
 		{
 		
 		$input = '';
+		if ( $placeholders == 0 ){
 		$input .= '<label>' . $label . '</label>';
+		}
 		
 		if($type == "textarea")
 			{
 			$input .= '<textarea name = "' . str_replace(' ', '_', strtolower($name)) . '"';
 			$input .= $required == 1 ? ' required ' : '';
+			if ( $placeholders == 1 ){
+			$input .= ' placeholder="' . $label . '" ';
+			}
 			$input .= '">';
 			$input .= '</textarea>';
 			
@@ -26,12 +30,17 @@ class createInput{
 			$input .= ' name = "' . str_replace(' ', '_', strtolower($name)) . '"';
 			$input .= ' value=""';
 			$input .= $required == 1 ? ' required ' : '';
+			if ( $placeholders == 1 ){
+			$input .= ' placeholder="' . $label . '" ';
+			}
 			$input .=  '/>';
 			}
 			
 		return $input;
 	
 		} 
+
+
 }
 
 
@@ -112,7 +121,7 @@ class FormValidation{
 		if ( $this -> valfields -> $key ){
 
 		if ( $this -> valfields -> $key == "text" || $this -> valfields -> $key == "textarea"  && strlen($data) > 1 ){
-		if(preg_match('/^[a-z0-9 .\-]+$/i', $data) === 0){
+		if ( $data != strip_tags( $data )){	
 		$err = 1;
 		}
 		}
@@ -142,6 +151,9 @@ class FormValFields{
 	return $this->$property;
 
 	}
+
+
+
 }
 
 ?>
