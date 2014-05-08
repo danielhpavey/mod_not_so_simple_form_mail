@@ -17,7 +17,7 @@ class createInput{
 			if ( $placeholders == 1 ){
 			$input .= ' placeholder="' . $label . '" ';
 			}
-			$input .= '">';
+			$input .= '>';
 			$input .= '</textarea>';
 			
 			}
