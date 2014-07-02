@@ -2,9 +2,9 @@
 defined( '_JEXEC' ) or die;
 
 echo '<div class="moduletable' .  $moduleclass_sfx . '">';
-echo '<form action="' . $currenturl . '" method = "post" id="simpleform"">';
-echo '<Legend>' . $params->get('form_title', '') . '</legend>';
+echo '<form action="' . $currenturl . '" method = "post" id="simpleform">';
 echo '<fieldset>';
+echo '<legend>' . $params->get('form_title', '') . '</legend>';
 echo '<fieldset>';
 foreach ( $fields as $f )
 	echo $f . '<br />';
