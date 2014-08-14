@@ -56,15 +56,25 @@ class form_submit{
 
 		$mailer =& JFactory::getMailer();
 		$config =& JFactory::getConfig();
+        $jversion = new JVersion();
 
 		if ( isset($this -> sender )){
 			$senderaddress = $this -> post[$this -> sender];
 			$sender = array( $senderaddress, $senderaddress );
 		} else {
-		$sender = array( 
-	    $config->getValue( 'config.mailfrom' ),
-	    $config->getValue( 'config.fromname' ) );
-		}
+
+            if ( $jversion->RELEASE > 3 ){
+                $sender = array( 
+                $config->get( 'config.mailfrom' ),
+                $config->get( 'config.fromname' ) );
+            
+            } else {
+                $sender = array( 
+                $config->getValue( 'config.mailfrom' ),
+                $config->getValue( 'config.fromname' ) );
+            }
+        }
+
 	 	$mailer->setSender($sender);
 
 		$mailer->addRecipient($this -> recipient);
