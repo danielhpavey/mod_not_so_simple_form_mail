@@ -1,4 +1,3 @@
-<div class="form">
 <?php
 $moduleclass_sfx = $params->get('moduleclass_sfx', '');
 include('helper.php');
@@ -51,4 +50,3 @@ if(isset($_POST["action"]))
 }
 
 ?>
-</div>

@@ -1,6 +1,6 @@
 <?php
 defined( '_JEXEC' ) or die;
-
+echo '<div class="form">';
 echo '<div class="moduletable' .  $moduleclass_sfx . '">';
 echo '<form action="' . $currenturl . '" method = "post" id="simpleform">';
 echo '<fieldset>';
@@ -21,4 +21,5 @@ echo '</form>';
 echo '<script>
 	$("#simpleform").validate();
 	</script>';
+echo '</div>';
 echo '</div>';
