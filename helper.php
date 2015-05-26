@@ -46,10 +46,11 @@ class createInput{
 
 class form_submit{
 
-		function __construct( $postdata, $mail, $message ){
+		function __construct( $postdata, $mail, $message, $subject ){
 			$this -> post = $postdata;
 			$this -> recipient = $mail;
 			$this -> message = $message;
+            $this -> subject = $subject;
 		}
 	
 		function send(){
@@ -79,7 +80,7 @@ class form_submit{
 
 		$mailer->addRecipient($this -> recipient);
 
-		$mailer->setSubject('Enquiry From Your Website');
+		$mailer->setSubject( $this -> subject );
 
 		$body = '';
 		$postexcludearray = array( 'action', 'view', 'option');

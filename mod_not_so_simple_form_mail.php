@@ -18,7 +18,7 @@ if(isset($_POST["action"]))
 	$validation = new FormValidation( $valfields, $_POST);
 	$val =  $validation -> validate();
 	if ($val == 0){
-	$send = new form_submit($_POST, $params->get('email', ''), $params->get('message', '') );
+	$send = new form_submit($_POST, $params->get('email', ''), $params->get('message', ''), $params->get('subject', '') );
 	if (strlen($params->get('sender', '')) > 1){
 		$send ->sender = $params->get('sender', '');
 	}

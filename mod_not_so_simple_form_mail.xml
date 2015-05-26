@@ -33,6 +33,13 @@
 					default="Form">
 				</field>
 				<field
+					name="subject"
+					type="text"
+					label="E-mail Title / Subject"
+					description="The E-mail Title / Subject"
+					default="">
+				</field>
+				<field
 					name="email"
 					type="text"
 					label="E-Mail Address"
