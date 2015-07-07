@@ -47,6 +47,17 @@
 					default="">
 				</field>
 				<field
+				    name="ccsender"
+				    type="radio"
+				    label="CC-Sender"
+				    description="CC In the Sender?"
+					default="0">
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+				<field
 					name="message"
 					type="textarea"
 					rows="10"
@@ -93,7 +104,8 @@
 			</fieldset>
 
 			<fieldset
-				name="fieldone" label = "Form Field One">
+				name="fieldone" label = "Form Fields">
+				<field type="spacer" name="fieldone" label="&lt;h3&gt;Field One&lt;&#47;h3&gt;" />
 				<field
 					name="display1"
 					type="radio"
@@ -143,10 +155,8 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldtwo" label = "Form Field Two">
+				<field type="spacer" name="fieldtwo" label="&lt;hr/&gt;&lt;h3&gt;Field Two&lt;&#47;h3&gt;" />
 				<field
 					name="display2"
 					type="radio"
@@ -196,10 +206,8 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldthree" label = "Form Field Three">
+				<field type="spacer" name="fieldthree" label="&lt;hr/&gt;&lt;h3&gt;Field Three&lt;&#47;h3&gt;" />
 				<field
 					name="display3"
 					type="radio"
@@ -249,10 +257,9 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldfour" label = "Form Field Four">
+                
+				<field type="spacer" name="fieldfour" label="&lt;hr/&gt;&lt;h3&gt;Field Four&lt;&#47;h3&gt;" />
 				<field
 					name="display4"
 					type="radio"
@@ -302,10 +309,8 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldfive" label = "Form Field Five">
+				<field type="spacer" name="fieldfive" label="&lt;hr/&gt;&lt;h3&gt;Field Five&lt;&#47;h3&gt;" />
 				<field
 					name="display5"
 					type="radio"
@@ -355,11 +360,9 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
 
-			<fieldset
-				name="fieldsix" label = "Form Field Six">
+				<field type="spacer" name="fieldsix" label="&lt;hr/&gt;&lt;h3&gt;Field Six&lt;&#47;h3&gt;" />
 				<field
 					name="display6"
 					type="radio"
@@ -409,10 +412,8 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldseven" label = "Form Field Seven">
+				<field type="spacer" name="fieldseven" label="&lt;hr/&gt;&lt;h3&gt;Field Seven&lt;&#47;h3&gt;" />
 				<field
 					name="display7"
 					type="radio"
@@ -462,10 +463,8 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldeight" label = "Form Field Eight">
+				<field type="spacer" name="fieldeight" label="&lt;hr/&gt;&lt;h3&gt;Field Eight&lt;&#47;h3&gt;" />
 				<field
 					name="display8"
 					type="radio"
@@ -515,10 +514,8 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldnine" label = "Form Field Nine">
+				<field type="spacer" name="fieldnine" label="&lt;hr/&gt;&lt;h3&gt;Field Nine&lt;&#47;h3&gt;" />
 				<field
 					name="display9"
 					type="radio"
@@ -568,10 +565,8 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldten" label = "Form Field Ten">
+				<field type="spacer" name="fieldten" label="&lt;hr/&gt;&lt;h3&gt;Field Ten&lt;&#47;h3&gt;" />
 				<field
 					name="display10"
 					type="radio"
@@ -621,10 +616,8 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldeleven" label = "Form Field Eleven">
+				<field type="spacer" name="fieldeleven" label="&lt;hr/&gt;&lt;h3&gt;Field Eleven&lt;&#47;h3&gt;" />
 				<field
 					name="display11"
 					type="radio"
@@ -674,10 +667,8 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldtwelve" label = "Form Field Twelve">
+				<field type="spacer" name="fieldtwelve" label="&lt;hr/&gt;&lt;h3&gt;Field Twelve&lt;&#47;h3&gt;" />
 				<field
 					name="display12"
 					type="radio"
@@ -727,10 +718,8 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldthirteen" label = "Form Field Thirteen">
+				<field type="spacer" name="fieldthirteen" label="&lt;hr/&gt;&lt;h3&gt;Field Thirteen&lt;&#47;h3&gt;" />
 				<field
 					name="display13"
 					type="radio"
@@ -780,10 +769,8 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldfourteen" label = "Form Field Fourteen">
+				<field type="spacer" name="fieldfourteen" label="&lt;hr/&gt;&lt;h3&gt;Field Fourteen&lt;&#47;h3&gt;" />
 				<field
 					name="display14"
 					type="radio"
@@ -833,10 +820,8 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldfifteen" label = "Form Field Fifteen">
+				<field type="spacer" name="fieldfifteen" label="&lt;hr/&gt;&lt;h3&gt;Field Fifteen&lt;&#47;h3&gt;" />
 				<field
 					name="display15"
 					type="radio"
@@ -886,10 +871,8 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldsixteen" label = "Form Field Sixteen">
+				<field type="spacer" name="fieldsixteen" label="&lt;hr/&gt;&lt;h3&gt;Field Sixteen&lt;&#47;h3&gt;" />
 				<field
 					name="display16"
 					type="radio"
@@ -939,10 +922,8 @@
 					<option
 						value="1">JYes</option>
 				</field>
-			</fieldset>
 
-			<fieldset
-				name="fieldseventeen" label = "Form Field Seventeen">
+				<field type="spacer" name="fieldseventeen" label="&lt;hr/&gt;&lt;h3&gt;Field Seventeen&lt;&#47;h3&gt;" />
 				<field
 					name="display17"
 					type="radio"
@@ -1005,7 +986,7 @@
 				</field>
 			</fieldset>
 			<fieldset
-				name="fieldeighteen" label = "Confirmtion Tick Box">
+				name="fieldeighteen" label = "Confirmation Tick Box">
 				<field
 					name="display18"
 					type="radio"
