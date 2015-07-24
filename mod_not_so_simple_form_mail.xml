@@ -10,7 +10,7 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>danielhpavey@gmail.com</authorEmail>
 	<authorUrl>www.spacaecadet9.com</authorUrl>
-	<version>0.0.1</version>
+	<install version="1" type="module" client="site" method="upgrade">
 	<description>Straight forward form module that simply e-mails submitted info</description>
 	<files>
 		<filename module="mod_not_so_simple_form_mail">mod_not_so_simple_form_mail.php</filename>
